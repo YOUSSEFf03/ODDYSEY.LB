@@ -1,0 +1,287 @@
+/* ----------------
+Standard Style
+---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "poppins", sans-serif; */
+}
+
+::selection {
+  background-color: black;
+  color: #fff;
+}
+
+::-moz-selection {
+  color: black;
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------
+Chips Style
+---------------- */
+
+.chips-container {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: #fff;
+  padding: 40px;
+}
+
+.chips {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chip {
+  /* background-color: #eee; */
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 500;
+}
+
+.chip.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ----------------
+Cards Style
+---------------- */
+
+.h1-cards-container {
+  margin-left: 40px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.container1 {
+  display: flex;
+  overflow: auto;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  gap: 20px;
+  scroll-padding: 10px;
+  /* width: 190px; */
+  width: 100%;
+  /* height: 254px; */
+  height: 420px;
+  background-color: white;
+  /* border: 2px solid coral; */
+}
+
+.cards-container {
+  position: relative;
+  scroll-snap-align: start;
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  background: #fff;
+  padding: 40px;
+}
+
+.card {
+  width: 270px;
+  height: 380px;
+  /* padding: .8em; */
+  background: white;
+  border-radius: 4px;
+  position: relative;
+  overflow: visible;
+  /* overflow: hidden; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  color: #000;
+  /* transform: translateY(5%); */
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-1%);
+}
+
+.card-img {
+  /* background-color: #ffcaa6; */
+  height: 40%;
+  width: 100%;
+  /* border-radius: 0.5rem; */
+  transition: 0.3s ease;
+}
+
+.card-img img {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-info {
+  padding-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hour-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  margin-bottom: 10px;
+}
+
+.card-svg {
+  height: 18px;
+  width: 18px;
+}
+
+.hours {
+  color: #000;
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.3;
+  /* margin-top: -10px; */
+}
+
+.text-body {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*Button*/
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+/*Hover*/
+/* .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+} */
+
+.card-button:hover {
+  border: 1px solid #000;
+  background-color: #eee;
+}
+
+/* .card-img {
+    width: fit-content;
+    height: 150px;
+}
+
+.svg-icon {
+    width: 20px;
+    height: 20px;
+} */
+
+.item {
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+/* ----------------
+go-to-top Style
+---------------- */
+
+.go-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+.go-top {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  padding: 14px;
+  border-radius: 4px;
+  box-shadow: -3px 3px 15px #33333338;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* =====================
+------------------
+Responsive Style
+------------------
+===================== */
+
+@media (max-width: 1025px) {
+  .cards-container {
+    overflow: scroll;
+    gap: 20px;
+  }
+
+  .chips-container {
+    overflow: scroll;
+  }
+}

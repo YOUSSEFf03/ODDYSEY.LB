@@ -1,0 +1,1638 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+
+  <!-- ion-icon -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="Style CSS/navbar.css" />
+  <link rel="stylesheet" href="Style CSS/footer.css" />
+  <link rel="stylesheet" href="Style CSS/explore.css" />
+
+  <!-- custom javascript link -->
+  <script src="Script/main.js"></script>
+
+  <link rel="icon" href="./ODYSSEY.LB LOGO/1x/Asset 1.png" type="image/x-icon" />
+
+  <title>ODYSSEY.LB | Explore</title>
+</head>
+
+<body id="top">
+  <header>
+    <div class="navbar">
+      <div>
+        <a href="index.html" class="logo-nav-link">
+          <h2 class="logo-nav">Odyssey.lb</h2>
+        </a>
+      </div>
+
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu__toggle">
+        <label for="menu__toggle" class="menu__btn">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a href="index.html" class="menu__item">Home</a></li>
+            <li><a href="about.html" class="menu__item">About</a></li>
+            <li><a href="explore.html" class="menu__item">Explore</a></li>
+            <li><a href="contact.html" class="menu__item">Contact</a></li>
+            <li><a href="#" class="menu__item">Cart</a></li>
+            <li><a href="log-in.html" class="menu__item" id="user-profile">Log-in</a></li>
+        </ul>
+    </div>
+
+      <ul class="navbar-list">
+        <li>
+          <a href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="navbar-link">About</a>
+        </li>
+        <li>
+          <a href="explore.html" class="navbar-link" style="font-weight: 500">Explore</a>
+        </li>
+        <li>
+          <a href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-icons-list">
+        <li>
+          <a href="log-in.html">
+            <ion-icon name="person-outline" class="navbar-icon" id="user-profile"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="cart-outline" class="navbar-icon"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="chips-container">
+    <div class="chips">
+      <button class="chip active" data-category="all" id="all">All</button>
+      <button class="chip" data-category="attractions" id="attractions">
+        Attractions
+      </button>
+      <button class="chip" data-category="activities" id="activities">
+        Activities
+      </button>
+      <button class="chip" data-category="entertainments" id="entertainments">
+        Entertainments
+      </button>
+      <button class="chip" data-category="festivals" id="festivals">
+        Festivals
+      </button>
+      <button class="chip" data-category="events" id="events">Events</button>
+      <button class="chip" data-category="food" id="food">Food</button>
+    </div>
+  </section>
+
+
+  <h1 class="h1-cards-container">TOP 10 THINGS TO DO</h1>
+  <section class="cards-container">
+    <div class="container1">
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/tripoli-old-souks.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Discover Tripoli Old Souks</p>
+            <p class="text-body">Enjoy a memorable shopping spree at the bustling souks of Tripoli, filled with unique
+              treasures.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">8 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$99.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/paragliding.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Experience Paraglading over Jounieh</p>
+            <p class="text-body">paragliding over green mountains, authentic villages, cities, and the ocean at the same
+              time.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">30 min</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$65.49</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/skiing.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Skiing with LESA - Mzaar Ski Resort</p>
+            <p class="text-body">Skiing with the most friendly instructors is one of the best experience you can have.</p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">8 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$199.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/qadisha-kadisha-valley.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Bcharre - Qadisha Valley & Cedars Forest Tour</p>
+            <p class="text-body">Check the most venerable representatives of the Cedars of Lebanon.</p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">9 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$89.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/beiteddine-palace.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Beiteddine and Al-Chouf Cedar Reserve</p>
+            <p class="text-body">Discover the hidden gems in Lebanon with fascinating ancient buildings and tourist
+              places.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">6 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$85.49</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/jeita-grotto.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Guided Small-Group Tour to Jeita Grotto</p>
+            <p class="text-body">Immerse yourself into wonderland on a tour of splendid Jeita Grotto, the Pearl of Nature
+              in Lebanon.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">4 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$59.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/national-museum.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">National Museum Tour with Guide</p>
+            <p class="text-body">Discover Lebanon's rich heritage at the National Museum with an expert guide.</p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">1 hr 30 min</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$24.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/wine-tasting.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Superior Quality: The Bekaa Valey Wineries</p>
+            <p class="text-body">Embark on a wine tasting tour in the fertile Bekaa Valley, home to Lebanon's finest
+              wineries.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">10 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$124.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/streetfood-tasting2.jpg" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Enjoy the Street Food Taste</p>
+            <p class="text-body">Treat your taste buds to mouthwatering shawarma sandwiches filled with succulent meat.
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+                <rect width="256" height="256" fill="none" />
+                <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+                <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12" />
+              </svg>
+              <p class="hours">6 hr</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$69.99</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card all">
+          <div class="card-img">
+            <img src="./assets/images/jbeil-festival.png" alt="" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">Byblos Spring Event Tickets</p>
+            <p class="text-body">
+              Spring into excitement with Byblos' captivating event - tickets now available!
+            </p>
+            <div class="hour-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+                <path
+                  d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+                <path
+                  d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+              </svg>
+              <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="text-title">$4.00</span>
+            <div class="card-button">
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </section>
+
+
+  <h1 class="h1-cards-container">ATTRACTIONS</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/jeita-grotto.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Guided Small-Group Tour to Jeita Grotto</p>
+          <p class="text-body">Immerse yourself into wonderland on a tour of splendid Jeita Grotto, the Pearl of Nature
+            in Lebanon.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">4 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$59.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/beiteddine-palace.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Beiteddine and Al-Chouf Cedar Reserve</p>
+          <p class="text-body">Discover the hidden gems in Lebanon with fascinating ancient buildings and tourist
+            places.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">6 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$85.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/tarvel-with-us.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Baalbeck Temples Tour : From Beirut</p>
+          <p class="text-body">Explore temples of Baalbeck, the largest and best preserved corpus of
+            roman architecture left.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">6 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$89.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/anjar.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Tour to Umayyad Ruins - Anjar : From Beirut</p>
+          <p class="text-body">Visit the Umayyad ruins and discover Anjar's city that was built in the early 8th century
+            A.D.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">7 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$99.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <h1 class="h1-cards-container">ACTIVITIES</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/paragliding.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Experience Paraglading over Jounieh</p>
+          <p class="text-body">paragliding over green mountains, authentic villages, cities, and the ocean at the same
+            time.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">30 min</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$65.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/qadisha-kadisha-valley.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Bcharre - Qadisha Valley & Cedars Forest Tour</p>
+          <p class="text-body">Check the most venerable representatives of the Cedars of Lebanon.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">9 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$89.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/qornet-el-sawda-lebanon.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Hike to the top of Qornet El Sawda</p>
+          <p class="text-body">Embark on an exhilarating journey to Lebanon's highest peak, Qornet El Sawda.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">8 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$119.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/skiing.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Skiing with LESA - Mzaar Ski Resort</p>
+          <p class="text-body">Skiing with the most friendly instructors is one of the best experience you can have.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">8 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$199.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <h1 class="h1-cards-container">ENTERTAINMENTS</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/national-museum.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">National Museum Tour with Guide</p>
+          <p class="text-body">Discover Lebanon's rich heritage at the National Museum with an expert guide.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">1 hr 30 min</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$24.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/Tyre.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Sidon and Tyre Tour with guide, lunch & tickets</p>
+          <p class="text-body">Enjoy a full-day trip from Beirut to the fascinating Lebanese cities of Tyre and Sidon.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">10 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$149.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/wellness-hotel.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Wellness Day at Lebanon's mountains</p>
+          <p class="text-body">Unwind with a rejuvenating day at one of Lebanon's mountainous wellness resorts.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">2 days</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/tripoli-old-souks.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Discover Tripoli Old Souks</p>
+          <p class="text-body">Enjoy a memorable shopping spree at the bustling souks of Tripoli, filled with unique
+            treasures.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">8 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$99.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <h1 class="h1-cards-container">FOOD</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/wine-tasting.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Superior Quality: The Bekaa Valey Wineries</p>
+          <p class="text-body">Embark on a wine tasting tour in the fertile Bekaa Valley, home to Lebanon's finest
+            wineries.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">10 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$124.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/lebanese-meal.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Authentic Lebanese Meal with Tania's Family</p>
+          <p class="text-body">Join your host Tania for an authentic Lebanese meal in her welcoming home in Beirut.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">3 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$80.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/food-class.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Private Lebanese Cooking Class</p>
+          <p class="text-body">During your 3-hour food experience, learn to prepare a traditional Lebanese meal using
+            family recipes.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">3 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$100.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/streetfood-tasting2.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Enjoy the Street Food Taste</p>
+          <p class="text-body">Treat your taste buds to mouthwatering shawarma sandwiches filled with succulent meat.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="card-svg">
+              <rect width="256" height="256" fill="none" />
+              <line x1="128" y1="80" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <line x1="169.6" y1="152" x2="128" y2="128" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <polyline points="184.2 99.7 224.2 99.7 224.2 59.7" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+              <path d="M190.2,190.2a88,88,0,1,1,0-124.4l34,33.9" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" />
+            </svg>
+            <p class="hours">6 hr</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$69.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <h1 class="h1-cards-container">FESTIVALS</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/Cedars-International-Festival.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Cedars Festival</p>
+          <p class="text-body">Immerse yourself in the enchanting Cedars Festival of Lebanon.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Starting $14.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/byblos-tango.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Byblos Tango Festival</p>
+          <p class="text-body">Dance to the rhythm at Byblos Tango Festival, Lebanon.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Starting $4.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/baalbek-festival.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Baalbeck Festival</p>
+          <p class="text-body">Experience the grandeur of Baalbeck Festival in Lebanon.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Starting $19.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/maarad_music_festival_1st_edition.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Maarad Festival - Tripoli</p>
+          <p class="text-body">Feel the rhythm at Maarad Music Festival, Tripoli, Lebanon.</p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Starting $10.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <h1 class="h1-cards-container">EVENTS</h1>
+  <section class="cards-container">
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/souk-el-akel.png" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Souk-el-Akel Coupon : 3 MenuItem from any kiosk</p>
+          <p class="text-body">
+            Savor savings with mouthwatering meal deals at souk-el-akel kiosk coupon sales.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">coupons online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$11.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/jbeil-festival.png" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Byblos Spring Event Tickets</p>
+          <p class="text-body">
+            Spring into excitement with Byblos' captivating event - tickets now available!
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$4.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/byblos-tango.jpg" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Byblos Tango Festival - Tickets</p>
+          <p class="text-body">
+            Indulge in the mesmerizing world of tango - Secure your tickets for the enchanting Byblos Festival today!
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Starting $4.00</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#">
+      <div class="card all">
+        <div class="card-img">
+          <img src="./assets/images/event4.png" alt="" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Spanish Night - With Chef Carla</p>
+          <p class="text-body">
+            Feeling a bit caliente? Head on down to Mar Mikhael to indulge in a Spanish cuisine night with Chef Carla.
+          </p>
+          <div class="hour-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+              <path
+                d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z" />
+              <path
+                d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z" />
+            </svg>
+            <p class="hours" style="margin-top: 0px; margin-left:5px; color:#555">tickets online-purchase</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$9.99</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+              </path>
+              <path
+                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+              </path>
+              <path
+                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </a>
+  </section>
+
+
+  <footer>
+    <section class="footer">
+      <div class="logo-text">
+        <div>
+          <a href="index.html" class="logo-nav-link">
+            <h2 class="brand-logo-footer">Odyssey.lb</h2>
+          </a>
+        </div>
+        <div>
+          <p class="brand-text-footer">
+            "Experience the essence of Lebanon with our travel company,
+            offering a wide range of activities and entertainment options."
+          </p>
+        </div>
+      </div>
+
+      <div class="our-links">
+        <h1>Our Links</h1>
+        <ul class="footer-list">
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="explore.html" class="footer-link">Explore</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Blogs</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="customer-helps">
+        <h1>Customer Help</h1>
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Guest Feedback</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-footer">
+        <h1>Contact</h1>
+        <address class="contact-footer-address">
+          ODYSSEY.LB,<br />
+          2855 Waygand Rd, Beirut,<br />
+          Beirut Governorate, 40107
+        </address>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2023
+        <a href="index.html" class="copyright-link">ODYSSEY.LB</a>. All Right
+        Reserved | Designed by Tony Katrib & Youssef Farah
+      </p>
+    </div>
+  </footer>
+
+  <!-- scroll to top -->
+  <a href="#top" id="goTopBtn" class="go-top active">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+</body>
+
+</html>

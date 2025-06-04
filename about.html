@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+
+    <!-- ion-icon -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="Style CSS/navbar.css" />
+    <link rel="stylesheet" href="Style CSS/about.css" />
+    <link rel="stylesheet" href="Style CSS/footer.css">
+
+    <!-- custom javascript link -->
+    <script src="Script/about.js"></script>
+    <script src="Script/main.js"></script>
+
+    <link rel="icon" href="./ODYSSEY.LB LOGO/1x/Asset 1.png" type="image/x-icon">
+
+    <title>ODYSSEY.LB | About Us</title>
+</head>
+
+<body id="top">
+    <header>
+        <div class="navbar">
+            <div>
+                <a href="index.html" class="logo-nav-link">
+                    <h2 class="logo-nav">Odyssey.lb</h2>
+                </a>
+            </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu__toggle">
+                <label for="menu__toggle" class="menu__btn">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a href="index.html" class="menu__item">Home</a></li>
+                    <li><a href="about.html" class="menu__item">About</a></li>
+                    <li><a href="explore.html" class="menu__item">Explore</a></li>
+                    <li><a href="contact.html" class="menu__item">Contact</a></li>
+                    <li><a href="#" class="menu__item">Cart</a></li>
+                    <li><a href="log-in.html" class="menu__item" id="user-profile">Log-in</a></li>
+                </ul>
+            </div>
+
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link" id="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navbar-link" style="font-weight: 500;">About</a>
+                </li>
+                <li>
+                    <a href="explore.html" class="navbar-link">Explore</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-icons-list">
+                <li>
+                    <a href="log-in.html">
+                        <ion-icon name="person-outline" class="navbar-icon" id="user-profile"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cart-outline" class="navbar-icon"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="about-video">
+        <video class="video-about" src="assets/videos/video-about.Mp4" autoplay muted>
+        </video>
+
+        <div class="video-cover"></div>
+
+        <div class="about-video-content">
+            <h1 class="title" style="--duration: 1s">
+                <span style="--delay: .5s">ODYSSEY.LB </span>
+                <!-- <span style="--delay: .8s">ASiS</span> -->
+            </h1>
+            <p>
+                Discover Lebanon's Hidden Treasures!
+            </p>
+            <button class="btn">
+                <div class="scroll"></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="first-section">
+        <div class="semi-circles-container">
+            <div class="with-us">
+                <div class="semi-circle">
+                    <img src="./assets/images/travel-with-us(2).jpg" alt="Your Image">
+                </div>
+                <!-- <h1>TRAVEL WITH US<ion-icon name="arrow-forward-outline"></ion-icon></h1> -->
+                <button class="cta">
+                    <span>TRAVEL WITH US</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+                <p>
+                    No matter who you are, or where you are going, our travel brands help every type of traveler not
+                    only find the trip that’s right for them, but get the best value every time.
+                </p>
+            </div>
+            <div class="with-us">
+                <div class="semi-circle">
+                    <img src="./assets/images/partner-with-us.jpg" alt="Your Image">
+                </div>
+                <button class="cta">
+                    <span>PARTNER WITH US</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+                <p>
+                    We connect partners big and small to the universe of travelers, giving access to data, tools and
+                    technology that empowers, maximizes potential and builds their business.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-container">
+        <img src="./assets/Partners Logos/Group 2.png" alt="" class="partners-img">
+    </section>
+
+    <section class="about-section">
+        <div class="section">
+            <div>
+                <div class="chips-smaller">
+                    <div class="chip active" onclick="changeContent('./assets/images/company-photo.jpg', 'text1')">Who
+                        We Are</div>
+                    <div class="chip" onclick="changeContent('./assets/images/what-we-do.jpg', 'text2')">What We Do
+                    </div>
+                    <div class="chip" onclick="changeContent('./assets/images/web-picture2.png', 'text3')">Our Platform
+                    </div>
+                </div>
+                <div class="section-image">
+                    <img src="./assets/images/company-photo.jpg" alt="Image 1" id="image">
+                </div>
+            </div>
+            <div class="section-text">
+                <div class="chips">
+                    <div class="chip active" onclick="changeContent('./assets/images/company-photo.jpg', 'text1')">Who
+                        We Are</div>
+                    <div class="chip" onclick="changeContent('./assets/images/what-we-do.jpg', 'text2')">What We Do
+                    </div>
+                    <div class="chip" onclick="changeContent('./assets/images/web-picture2.png', 'text3')">Our Platform
+                    </div>
+                </div>
+                <div id="text1">
+                    <!-- <h2>Text 1</h2> -->
+                    <p>Founded in 2003 in Beirut, ODYSSEY.LB has grown from a small Lebanese startup to one of the
+                        biggest leading digital travel companies. ODYSSEY.LB’s mission is to make it easier for
+                        everyone to experience the life in Lebanon.
+                        We know travel can be hard, but we also know that it’s worth it, every time. And because we
+                        believe travel is a force for good, we take our roles seriously.
+                        <b>
+                            We’re here to build great
+                            products, and facilitate connections between travelers and our partners that truly bring
+                            good into Lebanon.
+                        </b>
+                    </p>
+                </div>
+                <div id="text2" style="display: none;">
+                    <!-- <h2>Text 2</h2> -->
+                    <p>We build connections. We leverage our platform and technology capabilities across an extensive
+                        portfolio of businesses and brands to orchestrate the movement of people and the delivery of
+                        travel experiences on both a local and global basis.
+                        <b>
+                            We help our travelers and our partners find
+                            the right pathways to enjoy the experience in Lebanon.
+                        </b>
+                    </p>
+                </div>
+                <div id="text3" style="display: none;">
+                    <!-- <h2>Text 3</h2> -->
+                    <p>We are dedicated to helping travelers make the most of their visit to this beautiful country by
+                        offering a wide range of experiences to suit every interest and budget. From hiking and skiing
+                        to exploring ancient ruins and vibrant cities, our website makes it easy to browse and book your
+                        adventure.
+                        <b>
+                            We also provide useful information on visa requirements, local customs, and safety tips to
+                            ensure a hassle-free trip. Choose Odyssey.lb for an unforgettable travel experience in
+                            Lebanon.
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-section">
+        <div class="cards-container">
+            <div class="card">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"
+                        fill="white"></path>
+                </svg>
+                <h3>Investors</h3>
+                <p>
+                    Looking for financial information?
+                    Everything you need to know about ODYLB.
+                </p>
+                <a href="#">
+                    <div class="box">
+                        <div class="arrow right"></div>
+                        <div class="text">Learn More</div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-file-text-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"
+                        fill="white"></path>
+                </svg>
+                <h3>Blogs</h3>
+                <p>
+                    Want the scoop?<br>
+                    Check out the latest news and brand resources from ODYSSEY.LB Group.
+                </p>
+                <a href="#">
+                    <div class="box">
+                        <div class="arrow right"></div>
+                        <div class="text">Learn More</div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-award" viewBox="0 0 16 16">
+                    <path
+                        d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"
+                        fill="white"></path>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" fill="white">
+                    </path>
+                </svg>
+                <h3>Careers</h3>
+                <p>
+                    Ready to change the world?<br>
+                    Help us rewrite the rules of travel by joining the ODYSSEY.LB Group family.
+                </p>
+                <a href="#">
+                    <div class="box">
+                        <div class="arrow right"></div>
+                        <div class="text">Learn More</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="logo-text">
+                <div>
+                    <a href="index.html" class="logo-nav-link">
+                        <h2 class="brand-logo-footer">Odyssey.lb</h2>
+                    </a>
+                </div>
+                <div>
+                    <p class="brand-text-footer">
+                        "Experience the essence of Lebanon with our travel company, offering a wide range of activities
+                        and entertainment options."
+                    </p>
+                </div>
+            </div>
+
+            <div class="our-links">
+                <h1>Our Links</h1>
+                <ul class="footer-list">
+                    <li>
+                        <a href="index.html" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="footer-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="explore.html" class="footer-link">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="customer-helps">
+                <h1>Customer Help</h1>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Guest Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-footer">
+                <h1>Contact</h1>
+                <address class="contact-footer-address">
+                    ODYSSEY.LB,<br>
+                    2855 Waygand Rd, Beirut,<br>
+                    Beirut Governorate, 40107
+                </address>
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2023 <a href="index.html" class="copyright-link">ODYSSEY.LB</a>. All Right
+                Reserved | Designed by Tony Katrib & Youssef Farah
+            </p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="go-top active">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+
+    <!-- ion-icon -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="Style CSS/main.css" />
+
+    <!-- custom javascript link -->
+    <script src="Script/main.js"></script>
+
+
+    <link rel="icon" href="./ODYSSEY.LB LOGO/1x/Asset 1.png" type="image/x-icon">
+
+    <title>ODYSSEY.LB | Offficial Site</title>
+</head>
+
+<body id="top">
+    <div class="cookie-banner">
+        <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of
+            cookies.</p>
+        <a href="cookie-policy.html" class="link-cookie">Cookie Policy</a>
+        <button id="accept-btn">Accept</button>
+    </div>
+
+    <script>
+        const cookieBanner = document.querySelector('.cookie-banner');
+        const acceptBtn = document.getElementById('accept-btn');
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function hideBanner() {
+            cookieBanner.style.display = 'none';
+        }
+
+        acceptBtn.addEventListener('click', () => {
+            setCookie('cookies_accepted', true, 30);
+            hideBanner();
+            alert('Thank you for accepting our cookie policy!');
+        });
+    </script>
+
+    <header class="header">
+        <div class="navbar">
+            <div>
+                <a href="index.html" class="logo-nav-link">
+                    <h2 class="logo-nav">Odyssey.lb</h2>
+                </a>
+            </div>
+
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu__toggle">
+                <label for="menu__toggle" class="menu__btn">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a href="index.html" class="menu__item">Home</a></li>
+                    <li><a href="about.html" class="menu__item">About</a></li>
+                    <li><a href="explore.html" class="menu__item">Explore</a></li>
+                    <li><a href="contact.html" class="menu__item">Contact</a></li>
+                    <li><a href="#" class="menu__item">Cart</a></li>
+                    <li><a href="log-in.html" class="menu__item" id="user-profile">Log-in</a></li>
+                </ul>
+            </div>
+
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link" id="navbar-home-link">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li>
+                    <a href="explore.html" class="navbar-link">Explore</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-icons-list">
+                <li>
+                    <a href="log-in.html">
+                        <ion-icon name="person-outline" class="navbar-icon" id="user-profile"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cart-outline" class="navbar-icon"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <video class="video-bg" src="assets/videos/video-bg.Mp4" autoplay muted loop>
+        </video>
+
+        <div class="video-cover"></div>
+
+        <div class="hero-content">
+            <h1>Discover the Charm of Lebanon</h1>
+            <p>From exploring the ruins of ancient civilizations to indulging in the vibrant nightlife scene of Beirut,
+                we offer a plethora of options to satisfy your wanderlust and curiosity.</p>
+            <a href="explore.html"><button class="hero-btn">Travel Beyond</button></a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="left-container">
+            <img src="assets/images/about-img2.jpg" alt="" class="left-about-img">
+            <p class="left-about-text">
+                Lebanon is a land of stunning contrasts, where snow-capped mountains, golden beaches, and fertile
+                valleys blend seamlessly with a rich cultural heritage and a vibrant modern lifestyle, making it an
+                ideal destination for all types of travelers.
+            </p>
+            <a class="fancy" href="about.html">
+                <span class="top-key"></span>
+                <span class="text">Know More</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </a>
+        </div>
+        <div class="right-container">
+            <h1 class="right-about-h1">Experience the Life in Lebanon</h1>
+            <p class="right-about-text">
+                We will help you experience Lebanese life in its true sense. From living among the residents to eating
+                authentic delicacies you are sure to walk home with memories and wonderful moments.
+            </p>
+            <img src="assets/images/about-img3.jpg" alt="" class="right-about-img">
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-head">
+            <div>
+                <h1 class="explore-h1-head">
+                    Attractions & Entertainments
+                </h1>
+                <p class="explore-text-head">
+                    Looking for a thrilling adventure or a fun-filled day out? Look no further than our attractions and
+                    entertainment options! Whether you're traveling solo, with friends, or with family, we have
+                    something for everyone to enjoy.
+                </p>
+            </div>
+            <div>
+                <!-- <button>
+                    View All
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button> -->
+                <a href="explore.html">
+                    <button class="btn-white" href="explore.html">
+                        View All
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="explore-categories">
+            <div class="explore-category-item">
+                <img src="assets/images/explore-img1.jpg" alt="" class="explore-img">
+                <h1 class="explore-h1">Explore Lebanon's Treasures!</h1>
+                <p class="explore-text" id="explore-text1">
+                    Lebanon's diverse attractions, from ancient ruins to stunning beaches, offer a captivating blend of
+                    history, natural beauty, and culinary delights.
+                </p>
+                <a href="explore.html">
+                    <button class="learn-more" id="learn-more1">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Explore</span>
+                    </button>
+                </a>
+            </div>
+            <div class="explore-category-item">
+                <img src="assets/images/explore-img6.png" alt="" class="explore-img">
+                <h1 class="explore-h1">Experience the Magic of Lebanon's Festivals!</h1>
+                <p class="explore-text" id="explore-text3">
+                    Lebanese nightlife and festivals are a vibrant and dynamic fusion of Middle Eastern hospitality,
+                    music, and dance, attracting visitors from all around the world.
+                </p>
+                <a href="explore.html">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Explore</span>
+                    </button>
+                </a>
+            </div>
+            <div class="explore-category-item">
+                <img src="assets/images/explore-img3.jpg" alt="" class="explore-img">
+                <h1 class="explore-h1">Experience a taste of Lebanon</h1>
+                <p class="explore-text" id="explore-text3">
+                    Lebanese food is a rich and flavorful cuisine that incorporates a variety of fresh herbs, spices,
+                    and ingredients to create dishes that are both healthy and delicious.
+                </p>
+                <a href="explore.html">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Explore</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-head">
+            <h1 class="reviews-h1-head">What Our Customers Say</h1>
+            <p class="reviews-text-head">
+                We take pride in serving our customers with the best experience. Read what they say.
+            </p>
+        </div>
+        <div class="reviews-cards-container">
+            <div class="reviews-cards-small-container1">
+                <div class="reviews-card">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <p>
+                        "I had an amazing experience with this travel company. They provided an extensive list of
+                        activities and entertainments to choose from, which made my trip more exciting and enjoyable.
+                        From city tours to adventurous activities, everything was well-planned and executed flawlessly.
+                        Highly recommend!"
+                    </p>
+                    <h4>
+                        Emily Hunt
+                    </h4>
+                </div>
+                <div class="reviews-card">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <p>
+                        "I recently traveled with this company and was blown away by their selection of activities and
+                        entertainment. They truly went above and beyond to make sure we had a memorable trip. I
+                        particularly loved the outdoor adventures they offered, from hiking to kayaking. Thank you for
+                        an unforgettable experience!"
+                    </p>
+                    <h4>
+                        Emma Martinez
+                    </h4>
+                </div>
+            </div>
+            <div class="reviews-cards-small-container2">
+                <div class="reviews-card">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <p>
+                        "I can't recommend this travel company enough! They provided us with a wide range of activities
+                        and entertainment options to choose from, making our vacation a blast. From cultural experiences
+                        to thrilling activities, we had so much fun exploring and trying new things. Will definitely
+                        book with them again!"
+                    </p>
+                    <h4>
+                        Jad Najjar
+                    </h4>
+                </div>
+                <div class="reviews-card">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <p>
+                        "If you're looking for a travel company that can provide you with a variety of activities and
+                        entertainment options, look no further! I had the best time exploring new places and trying out
+                        different activities, all thanks to this company. I highly recommend them for your next
+                        adventure!"
+                    </p>
+                    <h4>
+                        Mohammad Ali
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-beforefooter">
+        <div class="before-footer">
+            <div class="text-before-footer">
+                <h1 class="h1-before-footer">
+                    Discover ODYSSEY.LB App
+                </h1>
+                <p class="p-before-footer">
+                    Discover the hidden gems of Lebanon and plan your perfect getaway with ease by downloading our
+                    travel
+                    app today!
+                </p>
+                <div class="download-store-logos">
+                    <a class="playstore-button" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+                            <path
+                                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                            </path>
+                        </svg>
+                        <span class="texts">
+                            <span class="text-1">GET IT ON</span>
+                            <span class="text-2">Google Play</span>
+                        </span>
+                    </a>
+                    <a class="appstore-button" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="currentColor" class="bi bi-apple"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                            <path
+                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                        </svg>
+                        <span class="texts">
+                            <span class="text-1">DOWNLOAD ON</span>
+                            <span class="text-2">App Store</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="phone-images">
+            <img src="assets/images/phone-img-preview (3).png" class="phone-preview" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="logo-text">
+                <div>
+                    <a href="index.html" class="logo-nav-link">
+                        <h2 class="brand-logo-footer">Odyssey.lb</h2>
+                    </a>
+                </div>
+                <div>
+                    <p class="brand-text-footer">
+                        "Experience the essence of Lebanon with our travel company, offering a wide range of activities
+                        and entertainment options."
+                    </p>
+                </div>
+            </div>
+
+            <div class="our-links">
+                <h1>Our Links</h1>
+                <ul class="footer-list">
+                    <li>
+                        <a href="index.html" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="footer-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="explore.html" class="footer-link">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="customer-helps">
+                <h1>Customer Help</h1>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Guest Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-footer">
+                <h1>Contact</h1>
+                <address class="contact-footer-address">
+                    ODYSSEY.LB,<br>
+                    2855 Waygand Rd, Beirut,<br>
+                    Beirut Governorate, 40107
+                </address>
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2023 <a href="index.html" class="copyright-link">ODYSSEY.LB</a>. All Right
+                Reserved | Designed by Tony Katrib & Youssef Farah
+            </p>
+        </div>
+    </footer>
+
+    <!-- <a href="#top" class="go-top active" id="goTopBtn">
+        <ion-icon name="arrow-up-outline" aria-label="Go To Top" data-go-top="" role="img"
+            class="md hydrated"></ion-icon>
+    </a> -->
+
+    <!-- <a href="#top" id="goTopBtn" class="go-top active">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a> -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="go-top active">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" style="position: fixed;">Top</button> -->
+
+</body>
+
+</html>

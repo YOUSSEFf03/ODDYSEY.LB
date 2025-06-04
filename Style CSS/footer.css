@@ -1,0 +1,171 @@
+/* ----------------
+Standard Style
+---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "poppins", sans-serif; */
+}
+
+::selection {
+    background-color: black;
+    color: #fff;
+}
+
+::-moz-selection {
+    color: black;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* ----------------
+Footer Style
+---------------- */
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #fff;
+    padding: 40px;
+}
+
+.footer h1 {
+    color: #3c3c3c;
+    font-weight: 600;
+}
+
+.brand-logo-footer {
+    color: #000;
+    /* margin-left: 25px; */
+    font-family: Felix Titling;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.brand-text-footer {
+    color: #3c3c3c;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-link:hover {
+    text-decoration: underline 1px solid #000;
+}
+
+.contact-footer-address {
+    margin-top: 15px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-link {
+    font-size: 22px;
+    color: #000;
+}
+
+.footer-bottom {
+    padding: 15px;
+    text-align: center;
+    /* border-top: solid 1px #575757; */
+    background-color: #333;
+    color: #fff;
+}
+
+.copyright-link {
+    display: inline-block;
+    /*text-decoration: underline;*/
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.copyright-link:is(:hover, :focus) {
+    text-decoration: underline;
+}
+
+/* ----------------
+go-to-top Style
+---------------- */
+
+.go-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.go-top {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: -3px 3px 15px #33333338;
+    z-index: 2;
+    visibility: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* =====================
+------------------
+Responsive Style
+------------------
+===================== */
+
+@media (max-width: 550px) {
+    .footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (min-height: 1300px) {
+    .footer {
+        min-height: 20vh;
+    }
+}
+
+@media (min-height: 1000px) {
+    .footer {
+        min-height: 20vh;
+    }
+}
+

@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+
+    <!-- ion-icon -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="Style CSS/login.css">
+
+    <!-- custom javascript link -->
+    <script src="Script/log-in.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh60/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="icon" href="" type="image/x-icon">
+
+    <title>ODYSSEY.LB | Sign-in</title>
+</head>
+
+<body>
+
+
+    <div class="back-button">
+        <a href="index.html" class="cta">
+            <button class="cta">
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                    id="arrow-horizontal">
+                    <path transform="translate(30)"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                        id="Path_10"></path>
+                </svg>
+                <span class="hover-underline-animation"> Back Home </span>
+            </button>
+        </a>
+    </div>
+
+    <section class="main">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>
+                        Create Account
+                    </h1>
+                    <div class="Social-container">
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <div class="input-group">
+                        <input required="" type="text" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="email" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+
+            <div class="form-container log-in-container">
+                <form action="#">
+                    <h1>Log-in</h1>
+                    <div class="Social-container">
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                    <span>or use your account</span>
+                    <div class="input-group">
+                        <input required="" type="email" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button>Log In</button>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>Already have an account? Log-In</p>
+                        <button class="ghost" id="logIn">Log-In</button>
+                        <!-- <a href="log-in.html" class="ghost" id="logIn"><button class="ghost" id="signUp">Log-In</button></a> -->
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, There!</h1>
+                        <p>Don't have an account? Sign-Up Free</p>
+                        <button class="ghost" id="signUp">Sign-Up</button>
+                        <!-- <a href="sign-up.html" class="ghost" id="logIn"><button class="ghost" id="signUp">Sign-Up</button></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="Script/main.js"></script>
+    </section>
+
+    <section class="main2">
+        <div class="container2" id="container2">
+            <div class="form-container sign-up-container1">
+                <form action="#">
+                    <h1>
+                        Create Account
+                    </h1>
+                    <div class="Social-container">
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <div class="input-group">
+                        <input required="" type="text" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="email" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button id="login-button">Sign Up</button>
+                    <div>
+                        <p>
+                            Already have an account? Click here to <span
+                                style="color:rgb(58, 58, 144); font-weight: bold; font-size: 16; text-decoration: underline 1px;"
+                                id="login-link" onclick="showLogInContainer()">Log-In</span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container log-in-container1">
+                <form action="#">
+                    <h1>Log-in</h1>
+                    <div class="Social-container">
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-apple"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                    <span>or use your account</span>
+                    <div class="input-group">
+                        <input required="" type="email" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button>Log In</button>
+
+                    <div id="signup-button">
+                        <p id="signup-button">
+                            Don't have an account? Click here to <span
+                                style="color:rgb(58, 58, 144); font-weight: bold; font-size: 16; text-decoration: underline 1px; "
+                                id="signup-link" onclick="showSignUpContainer()">Sign-Up</span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+    </section>
+
+
+    <script>
+        const loginLink = document.getElementById("login-link");
+        const signupButton = document.getElementById("signup-link");
+        const signUpContainer = document.querySelector(".sign-up-container1");
+        const logInContainer = document.querySelector(".log-in-container1");
+
+        signUpContainer.style.display = "none";
+        logInContainer.style.display = "flex";
+
+
+        // Function to show the log-in container
+        function showLogInContainer() {
+            signUpContainer.style.display = "none";
+            logInContainer.style.display = "flex";
+            console.log('signUpContainer.style.display = "none"');
+
+        }
+
+        // Function to show the sign-up container
+        function showSignUpContainer() {
+            signUpContainer.style.display = "flex";
+            logInContainer.style.display = "none";
+            console.log('signUpContainer.style.display = "flex";');
+        }
+
+        // Event listener for login link
+        loginLink.addEventListener("click", showLogInContainer);
+
+        // Event listener for signup button
+        signupButton.addEventListener("click", showSignUpContainer);
+    </script>
+
+</body>
+
+</html>
